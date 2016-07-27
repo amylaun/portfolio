@@ -1,0 +1,41 @@
+.form--contact {
+    display: flex;
+    flex-wrap: wrap;
+    label,
+    input,
+    textarea,
+    select {
+        font-size: 12px;
+        line-height: 1em;
+        width: 100%;
+    }
+    label {
+        margin: 10px 0 5px;
+    }
+    input,
+    textarea,
+    select {
+        border: 1px solid #ececec;
+        margin-bottom: 10px;
+        padding: 13px 13px 10px;
+        width: 100%;
+        &:focus {
+            border: 1px solid darken(#ececec, 10%);
+            outline: none;
+        }
+    }
+    textarea {
+        line-height: 1.6em;
+        height: 100px;
+    }
+    input[type="submit"] {
+        border: 0;
+        padding: 22px 20px 18px;
+        background-color: #001280;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}

@@ -1,13 +1,29 @@
 .social-media-list {
     text-align: center;
     .social-media-item {
-        background: #ececec;
-        padding: 10px;
-        margin: 0 10px;
-    }
-    .icon {
+        background: #ffffff;
+        border-radius: 20px;
         display: inline-block;
-        margin-right: 10px;
-        vertical-align: middle;
+        line-height: 1em;
+        padding: 20px;
+        position: relative;
+        margin: 0 10px 20px;
+        a {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        svg {
+            fill: #ff3366;
+            width: 100%;
+        }
+        .username {
+            color: rgba(255, 255, 255, 0.5);
+            left: 0;
+            right: 0;
+            bottom: -25px;
+            position: absolute;
+        }
     }
 }

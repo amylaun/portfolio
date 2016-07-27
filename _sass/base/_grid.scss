@@ -1,0 +1,42 @@
+.site-wrapper {
+}
+.site-header {
+
+}
+.site-nav {
+    background-color: #f2f3ee;
+    padding: 5px;
+    color: #aeafab;
+    font-size: 12px;
+    text-align: center;
+    .header--small {
+        padding: 0 10px;
+    }
+}
+.site-title {
+    position: relative;
+    h1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #aeafab;
+    }
+}
+.site-main {
+    width: 100%;
+    max-width: 450px;
+    margin: 40px auto 100px;
+    padding: 0 20px;
+}
+.site-footer {
+    background-color: #ff3366;
+    padding: 60px 20px;
+    text-align: center;
+}

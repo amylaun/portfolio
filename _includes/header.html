@@ -2,17 +2,19 @@
 
     <div class="wrapper">
 
-    <a class="site-title" href="/">
-        {% include logo.svg %}
-    </a>
+        <nav class="site-nav">
+            <a class="header--small" href="/">Work</a>
+            {% for my_page in site.pages %}
+                {% if my_page.title %}
+                    <a class="header--small" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                {% endif %}
+            {% endfor %}
+        </nav>
 
-    <nav class="site-nav">
-        {% for my_page in site.pages %}
-            {% if my_page.title %}
-                <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-            {% endif %}
-        {% endfor %}
-    </nav>
+        <div class="site-title">
+            {% include logo.svg %}
+        	<h1>{{ page.title }}</h1>
+        </div>
 
     </div>
 
