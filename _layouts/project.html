@@ -1,15 +1,18 @@
 ---
-layout: default
+layout: full
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.categories }}</p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
+    <div class="post-content" itemprop="articleBody">
+        <div class="content-wrapper">
+            <p class="post-meta center">{{ page.categories }}</p>
+            {{ content }}
+        </div>
+        <div class="grid grid__work">
+            <div class="col-1-2 grid__work--image" style="background-image:url('https://unsplash.it/500/700?image=1025')">
+            </div>
+            <div class="col-1-2 grid__work--description">
+                <h2>Stephanie Owens is an artist and filmmaker in Los Angeles, CA.</h2>
+            </div>
+        </div>
+    </div>
 </article>

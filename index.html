@@ -1,18 +1,15 @@
 ---
-layout: default
+layout: wide
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Projects</h1>
-
-  <ul class="post-list">
-    {% for post in site.projects %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <div class="box--wrapper">
+        {% for post in site.projects %}
+            <article>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    {{ post.title }}
+                </a>
+            <article>
+        {% endfor %}
+    </div>
 </div>

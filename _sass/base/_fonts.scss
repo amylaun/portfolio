@@ -1,21 +1,27 @@
-$baseline_font : 12px;
+$font_1: 'Arima Madurai';
+$font_2: 'Work Sans';
+$font_3: 'Khula';
+
+$baseline_font : 11px;
 
 html,
 body {
-    font-family: 'Khula', sans-serif;
+    font-family: $font_3;
     font-size: $baseline_font;
     line-height: 1.6;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
 .header--small {
-    font-size: 11px;
     letter-spacing: .8px;
     text-transform: lowercase;
 }
-
-
-
-
 
 h1 {
     position: absolute;
@@ -28,9 +34,15 @@ h1 {
     margin: 0;
     text-align: center;
     text-transform: uppercase;
-    color: #aeafab;
+    color: c('font-1');
     display: inline-block;
     width: 100%;
     max-width: 140px;
     margin: auto;
+}
+h2 {
+    font-family: $font_1;
+    font-weight: 100;
+    font-size: 55px;
+    line-height: 1.3;
 }

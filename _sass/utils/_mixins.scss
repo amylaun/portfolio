@@ -1,0 +1,10 @@
+@mixin min($content) {
+    @media (min-width: $content) {
+        @content;
+    }
+}
+@mixin max($content) {
+    @media (max-width: $content) {
+        @content;
+    }
+}

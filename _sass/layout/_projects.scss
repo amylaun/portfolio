@@ -1,0 +1,16 @@
+.grid__work {
+    .col-1-2 {
+        padding: 150px 50px;
+    }
+}
+.grid__work--image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    caption {
+        opacity: 0;
+    }
+}
+.grid__work--description {
+    background-color: #f2f3ee;
+    color: #b2b3af;
+}

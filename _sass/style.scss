@@ -1,11 +1,15 @@
 @charset "utf-8";
 
 @import
+    "utils/mixins",
+    "utils/functions",
     "utils/reset",
+    "base/variables",
     "base/grid",
     "base/fonts",
     "module/header",
     "module/footer",
     "module/forms",
-    "module/icons"
+    "module/icons",
+    "layout/projects"
 ;

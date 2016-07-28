@@ -1,21 +1,41 @@
-.site-title {
 
+$animationcount: 1.5s;
+
+.svg-logo {
+    fill: none;
+    width: 100%;
+    max-width: 300px;
 }
-.logo {
-    display: block;
-    margin: auto;
-    padding: 20px;
-    width: 300px;
+.svg-logo-circle-1,
+.svg-logo-circle-2,
+.svg-logo-circle-3 {
+    animation: logoLoop $animationcount*2 linear 1;
+    stroke-dasharray: 10 1000;
+    stroke-width: 10;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-.logo-circle-1 {
-    fill: #001280;
+.svg-logo-circle-1 {
+    animation-delay: .2 * $animationcount;
+    stroke: c('logo-1');
 }
-.logo-circle-2 {
-    fill: #FF3366;
+.svg-logo-circle-2 {
+    animation-delay: .3 * $animationcount;
+    stroke: c('logo-2');
 }
-.logo-circle-3 {
-    fill: #C8FF05;
+.svg-logo-circle-3 {
+    animation-delay: .4 * $animationcount;
+    stroke: c('logo-3');
 }
-.logo-letter {
+.svg-logo-letter {
     fill: #FFFFFF;
+}
+
+@keyframes logoLoop {
+    0%   { opacity: 0; stroke-dasharray: 10 1000; }
+    20%  { opacity: 1; stroke-dasharray: 10 1000; }
+    40%  { opacity: 1; stroke-dasharray: 10 1000; }
+    50%  { opacity: 1; stroke-dasharray: 250 1000; }
+    60%  { opacity: 1; stroke-dasharray: 750 1000; }
+    100% { opacity: 1; stroke-dasharray: 1000; }
 }

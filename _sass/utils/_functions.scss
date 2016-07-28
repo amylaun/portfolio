@@ -1,0 +1,6 @@
+@function c($value) {
+    @if map-has-key($colors, $value) {
+         @return map-get($colors, $value);
+    }
+    @error ( 'Specified color "' + $value + '" is not defined in $color list' )
+}
