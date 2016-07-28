@@ -5,6 +5,7 @@ description: > # My name is Amy. I am a lover of laughing, hammocks, and pie.
 baseurl: ""
 logo: ""
 url: "http://amylaun.com"
+url_assets: "/assets"
 url_img: "/assets/images"
 twitter_username: amypotato
 github_username:  amylaun
@@ -12,8 +13,7 @@ insta_username:  dandetiger
 
 # Build settings
 markdown: kramdown
-exclude: ['node_modules', 'css', '_scss']
-keep_files: ['_site/css']
+exclude: ['node_modules']
 
 # Site Collections
 collections:

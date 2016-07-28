@@ -15,19 +15,6 @@
 }
 .site-title {
     position: relative;
-    h1 {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 12px;
-        letter-spacing: 2px;
-        margin: 0;
-        text-align: center;
-        text-transform: uppercase;
-        color: #aeafab;
-    }
 }
 .site-main {
     width: 100%;

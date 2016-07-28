@@ -1,12 +1,36 @@
+$baseline_font : 12px;
+
 html,
 body {
     font-family: 'Khula', sans-serif;
-    font-size: 12px;
-    line-height: 1.8em;
+    font-size: $baseline_font;
+    line-height: 1.6;
 }
 
 .header--small {
     font-size: 11px;
     letter-spacing: .8px;
     text-transform: lowercase;
+}
+
+
+
+
+
+h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #aeafab;
+    display: inline-block;
+    width: 100%;
+    max-width: 140px;
+    margin: auto;
 }
